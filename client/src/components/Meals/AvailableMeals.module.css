@@ -1,0 +1,25 @@
+.availableMeals {
+    width: 100%;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.MealsLoading{
+    text-align: center;
+}
+
+.MealsError{
+    text-align: center;
+    color: rgb(165, 23, 23);
+}
+
+
+
+@media (max-width: 750px) {
+    .availableMeals {
+        padding: 0 0.7rem;
+    }
+}

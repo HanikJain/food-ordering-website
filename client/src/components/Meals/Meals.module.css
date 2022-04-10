@@ -1,0 +1,10 @@
+.meals {
+    padding: 0 2rem;
+}
+
+
+@media (max-width: 750px) {
+    .meals { 
+        padding: 0 0.7rem;
+    }
+}

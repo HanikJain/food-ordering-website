@@ -1,0 +1,55 @@
+.header{
+    top :  0;
+    left : 0;
+    position: sticky;
+    border-bottom: 1px solid var(--black);
+    box-shadow:  0px 1px 3px rgb(216, 215, 215);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+    padding: 0 2rem;
+    background-color: var(--white);
+}
+.title {
+    color: var(--black);
+    text-decoration: none;
+    font-size:x-large;
+}
+
+.restaurants{
+    color: var(--black);
+    font-size:medium;
+    width: 50px;
+    height: 90%;
+    margin: 0 0.5rem;
+}
+.restaurants svg {
+    fill : var(--orange);
+    margin: 2px 0 0 0;
+    width: 80%;
+    height: 80%;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 750px) {
+    .header {
+        font-size:x-small;
+        padding: 0 0.7rem;
+    }
+    .title {
+        font-size: large;
+        text-decoration: none;
+    }
+    .restaurants{
+        margin: 0 0.1rem;
+        width: 45px;
+        height: 80%;
+    }
+}

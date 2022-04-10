@@ -1,0 +1,30 @@
+.form {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form button {
+    font: inherit;
+    cursor: pointer;
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    color: white;
+    padding: 0.10rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .form button:hover,
+  .form button:active {
+    background-color: #641e03;
+    border-color: #641e03;
+  }
+
+  .InputAmount {
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }

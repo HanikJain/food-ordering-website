@@ -1,0 +1,80 @@
+.mealItem {
+    width: 250px;
+    height: 330px;
+    color: var(--black);
+    border-radius: 0.8rem;
+    margin: 5rem auto 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition:  300ms ease-in-out;
+}
+
+.mealItem:hover {
+    background-color: var(--yellow);
+    color: var(--white);
+    transform: scale(1.02);
+}
+.name h2 {
+    margin: 0.3rem 1rem;
+    text-align: center;
+    font-size: 1.5em;
+}
+.description {
+    border-bottom: 1.5px dotted var(--yellow);
+    border-top: 1.5px dotted var(--yellow);
+}
+.mealItem:hover .description {
+    border-bottom: 1.5px dotted var(--orange);
+    border-top: 1.5px dotted var(--orange);
+}
+.description h5{
+    margin: 0.4rem 1rem;
+    text-align: center;
+    font-size: small;
+}
+.img{ 
+    width: 80%;
+    height: 150%;
+    margin: 0 10%;
+    position: relative;
+    top: -50%;
+    filter: drop-shadow(0 0 0.75rem rgb(223, 150, 90));
+}
+
+.image {
+    height: 40%;
+    width: 100%;
+}
+
+.name {
+    height: 20%;
+    width: 100%;
+}
+
+.description {
+    height: 10%;
+    width: 100%;
+}
+
+.quantity {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.errorMsg {
+    margin : 0; 
+    font-size: small;
+    color: rgb(129, 19, 19);
+    visibility: hidden;
+}
+.error{
+    visibility:visible;
+}
+
+

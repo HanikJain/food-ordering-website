@@ -1,0 +1,50 @@
+.registerContainer{
+    width: 40%;
+    background-color: #f3f4ff;
+    border-radius: 1rem;
+    border: 1px solid var(--orange);
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.inValid{
+    color: red !important;
+}
+
+.Button{
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+.buttonOutline:hover,
+.buttonOutline:active {
+  filter : brightness(1.1);
+}
+
+.buttonOutline {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: var(--white);
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  padding: 0.4rem 1.7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 0 0.2rem 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .registerContainer{
+        width: 90%;
+    }
+}
+@media (min-width: 769px) and (max-width: 900px) {
+    .registerContainer{
+        width: 70%;
+    }
+}

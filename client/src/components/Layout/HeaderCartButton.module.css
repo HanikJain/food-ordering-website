@@ -1,0 +1,65 @@
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: var(--orange);
+  color: white;
+  padding: 0.4rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.button:hover,
+.button:active {
+  filter : brightness(1.1);
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: 0.5rem;
+}
+
+.badge {
+  background-color: var(--green);
+  padding: 0.25rem 0.7rem;
+  border-radius: 25px;
+  margin-left: 0rem;
+  font-weight: bold;
+}
+
+.button:hover .badge,
+.button:active .badge {
+  filter : brightness(0.9);
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 750px)  {
+  .button {
+    padding: 0.5rem 0.8rem;
+  }
+}

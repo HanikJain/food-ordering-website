@@ -1,0 +1,114 @@
+.restaurantCard{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50% 40% 10%;
+    border-radius: 1rem;
+}
+
+.restaurantImage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.restaurantImageContent{
+    padding: 0.2rem;
+    width:60%;
+    height:100%;
+    background: linear-gradient(to right,
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.4) 35%,
+        hsl(0 0% 0% / 1)
+    ); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ratings{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0.5rem 0;
+    color: #fff;
+}
+
+.ratings span {
+    width: 36px;
+    height: 36px;
+}
+.ratings svg{
+    width: 70%;
+    height: 70%;
+}
+
+.priceRange {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--green);
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+}
+
+.restaurantCardBody{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.col1{
+    padding-left: 0.2rem;
+    display: grid;
+    grid-template-rows: 37% 28% 35%;
+}
+.col1 p{
+    margin: 0;
+    padding: 0;
+    color: rgb(199, 199, 199);
+    font-size: 0.7rem;
+}
+
+.col2{
+    padding-left: 0.2rem;
+    display: grid;
+    grid-template-rows: 33% 33% 34%;
+}
+
+
+.col2 div span{
+    width: 36px;
+    height: 36px;
+}
+
+.col2 div svg{
+    width: 70%;
+    height: 70%;
+}
+
+.restaurantCardCuisine{
+    font-size: 0.8rem;
+}
+
+.col2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.btn{
+    background-color: var(--orange);
+    color: var(--white);
+    border: 1px solid var(--orange);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 0.3rem;
+}
+
+.btn:hover,
+.btn:active {
+    filter: brightness(1.5);
+}

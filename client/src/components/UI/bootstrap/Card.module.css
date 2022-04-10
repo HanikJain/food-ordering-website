@@ -1,0 +1,17 @@
+.ratings{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+.ratings span {
+    height: 36px;
+}
+.reviews{
+    width: 36px;
+    height: 36px;
+}
+.ratings svg{
+    width: 70%;
+    height: 70%;
+}

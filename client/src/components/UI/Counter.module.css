@@ -1,0 +1,34 @@
+
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 120px;
+    height: 50px;
+    align-items: center;
+}
+
+.counterButton{
+    width: 30%;
+    height: 70%;
+    border-radius: 20%;
+    border: none;
+    background-color: var(--green);
+    color: inherit;
+    cursor: pointer;
+}
+.counterButton svg {
+    fill: var(--white);
+    width: 80%;
+    height: 80%;
+}
+
+.counterButton xml {
+    fill: var(--white);
+    width: 80%;
+    height: 80%;
+}
+.h3{
+    font-size: 300;
+}

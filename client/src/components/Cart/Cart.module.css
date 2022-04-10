@@ -1,0 +1,60 @@
+.TotalAmount{
+  padding: 1.5rem 0;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.TotalAmount span{
+  margin: 0 1rem;
+  font-size:1.1rem;
+}
+
+.button {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: var(--orange);
+    color: white;
+    padding: 0.4rem 1.7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: bold;
+    margin:0 0.2rem 1rem;
+  }
+  
+  .button:hover,
+  .button:active {
+    filter : brightness(1.1);
+  }
+
+  .buttonOutline:hover,
+  .buttonOutline:active {
+    filter : brightness(1.1);
+  }
+  
+  .buttonOutline {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: var(--white);
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    padding: 0.4rem 1.7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: bold;
+    margin: 0 0.2rem 1rem;
+  }
+  .order{
+      float: right;
+      display: flex;
+      flex-direction: row;
+      margin: 1rem 0;
+
+  }
+  .bump {
+    animation: bump 300ms ease-out;
+  }

@@ -1,0 +1,39 @@
+.userOrdersCard {
+    border: 1px solid var(--orange);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.itemHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+.item img {
+    width: 20%;
+    height: 100%;
+}
+.quantity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.itemAmount {
+    height: 60%;
+}

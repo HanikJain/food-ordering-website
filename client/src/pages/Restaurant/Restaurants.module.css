@@ -1,0 +1,54 @@
+.body {
+    background-color: var(--black);
+    margin: 0;
+}
+
+h1 {
+    color: var(--orange);
+    text-align: center;
+    margin: 0;
+    padding: 0.5em 0 0 0;
+}
+
+.fetch{
+    color: var(--white);
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.error {
+    color: rgb(224, 13, 66);
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.noResultsMatch{
+    color: var(--white);
+    text-align: center;
+    
+}
+
+.restaurants{
+    width: 100%;
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.restaurant{
+    background-color: var(--white);
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 750px) {
+    .restaurants{
+        padding: 0 0.9rem;
+    }
+}
