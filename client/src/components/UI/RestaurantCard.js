@@ -32,9 +32,11 @@ export default function RestaurantCard(props) {
         <div className={styles.restaurantCardBody}>
             <div className={styles.col1}>
                 {/* title description cuisine */}
-                <div>{props.name}</div>
-                <div className={styles.restaurantCardCuisine}>
-                {cuisine.length > 45 ? (cuisine.slice(0,40) + "..." ) : cuisine}
+                <div className={styles.restaurantCardName} >
+                    {props.name.length >= 26 ? (props.name.slice(0,23) + "..." ) : props.name}
+                </div>
+                <div className={styles.restaurantCardCuisine} >
+                    {cuisine.length > 80 ? (cuisine.slice(0,75) + "..." ) : cuisine}
                 </div>
             </div>
             {/* <div className={styles.col2}>

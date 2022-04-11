@@ -14,17 +14,20 @@ h1 {
     color: var(--white);
     text-align: center;
     margin: 0.5em 0;
+    padding: 1rem;
 }
 
 .error {
     color: rgb(224, 13, 66);
     text-align: center;
     margin: 0.5em 0;
+    padding: 1rem;
 }
 
 .noResultsMatch{
     color: var(--white);
     text-align: center;
+    padding: 1rem;
     
 }
 
@@ -46,6 +49,9 @@ h1 {
     align-items: center;
 }
 
+.ResultsMatchKeyword{
+    color: var(--orange);
+}
 
 @media (max-width: 750px) {
     .restaurants{

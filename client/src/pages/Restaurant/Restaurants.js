@@ -16,7 +16,7 @@ export default function Restaurants() {
     const dispatch = useDispatch();
     const {isFetching, isError, data} = useFetchRestaurants();
     const [inValid, setInValid] = useState({isValid:false, msg: ""})    
-    const [searchData, setSearchData] = useState({exists:false, data: [], msg:"", active:false});
+    const [searchData, setSearchData] = useState({exists:false, data: [], msg:"", active:false, searchString: ""});
     let searchDataArray = [];
 
 
@@ -41,9 +41,9 @@ export default function Restaurants() {
       }
 
       if(searchDataArray.length > 0){
-        setSearchData({exists:true, data: searchDataArray, msg: "", active: true});
+        setSearchData({exists:true, data: searchDataArray, msg: "", active: true, searchString: searchStr});
       } else {
-        setSearchData({exists:false, data: searchDataArray, msg: "Not restaurant found!", active: true});
+        setSearchData({exists:false, data: searchDataArray, msg: "Not restaurant found!", active: true, searchString: searchStr});
       }
     }
 
@@ -75,6 +75,11 @@ export default function Restaurants() {
     }
 
 
+    const noResult = 
+    <Fragment>
+        <p className= {styles.noResultsMatch} >{searchData.msg}</p>
+    </Fragment>; 
+
   return (
     <Fragment>
         <NavBar />
@@ -91,13 +96,14 @@ export default function Restaurants() {
             />
 
             {/* Fetching Restaurants */}
-            {(isFetching && !isError) && <p className= {styles.fetch} >Fetching Restaurants...</p>}
+            {(isFetching && !isError) && <p className= {styles.fetch} >Fetching Restaurants... Wait for few seconds</p>}
             {(isError) && <p className= {styles.error} >Something went wrong</p>}
-            { (!searchData.exists && searchData.active) && <p className= {styles.noResultsMatch} >{searchData.msg}</p> }
+            { (!searchData.exists && searchData.active) &&   noResult}
+            {(searchData.exists && searchData.active && searchData.searchString !== "") && <p className= {styles.noResultsMatch} > Results found for  <i className={styles.ResultsMatchKeyword}>" {searchData.searchString} "</i></p>}
 
             {(!isFetching && !isError) && 
             <div className={styles.restaurants}>
-                {(data.length > 0 && !searchData.exists && !searchData.active)&& (data.map(restaurantList)) }  
+                {(data.length > 0 && !searchData.exists )&& (data.map(restaurantList)) }  
                 {(searchData.exists && searchData.active) && searchData.data.map(restaurantList)}      
             </div>
             }

@@ -4,6 +4,15 @@
     align-items: center;
     margin: 0.5rem 0;
 }
+.trendingUp{
+    height: 36px;
+    margin-right: 0.8rem;
+}
+.trendingUp svg{
+    width: 10%;
+    height: 10%;
+}
+
 .ratings span {
     height: 36px;
 }

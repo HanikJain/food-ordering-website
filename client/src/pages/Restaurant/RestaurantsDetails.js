@@ -7,7 +7,7 @@ import CartContext from '../../store/cart-context';
 import NavBar from "../../components/Layout/NavBar";
 import Layout from '../../components/UI/bootstrap/Layout';
 import CarouselComponent from '../../components/UI/bootstrap/Carousel';
-import CardCompnent, {CardQuote} from '../../components/UI/bootstrap/Card'
+import CardCompnent, {CardQuote} from '../../components/UI/bootstrap/Card';
 
 import styles from "./RestaurantsDetails.module.css";
 

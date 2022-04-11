@@ -9,7 +9,7 @@ export default function Layout (props) {
         </div>
         <Row>
             <Col md style={{margin: "auto" }}>
-                <ReviewCard rating={props.res.ranking} totalReviews={props.res.num_reviews}  raw_ranking = {parseFloat(props.res.raw_ranking).toFixed(1)}/>
+                <ReviewCard rating={props.res.ranking_position} totalReviews={props.res.num_reviews}  raw_ranking = {parseFloat(props.res.raw_ranking).toFixed(1)}/>
             </Col>
             <Col md style={{margin: "auto"}}>
                 <DetailsComponent address={props.res.address} email={props.res.email} phone={props.res.phone}/>

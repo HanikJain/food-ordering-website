@@ -1,6 +1,9 @@
 import React from 'react'
 import {Card, ListGroup, ListGroupItem, blockquote} from 'react-bootstrap'
 import { ReactComponent as RedHeart } from '../../../assets/icons/red-heart.svg';
+import {ReactComponent as TrendingUp } from "../../../assets/icons/trending-up.svg";
+import {ReactComponent as PhoneIcon } from "../../../assets/icons/phone.svg";
+
 
 import styles from "./Card.module.css"
 
@@ -14,7 +17,8 @@ export default function ReviewCard(props) {
         </Card.Body>
         <ListGroup className="list-group-flush">
             <ListGroupItem>
-                {props.rating || "N.A."} 
+                <span className={styles.trendingUp} > <TrendingUp /> </span>
+                  {props.rating || "N.A."} 
             </ListGroupItem>
             <ListGroupItem>
                 <div className={styles.ratings}>
@@ -46,6 +50,7 @@ export function DetailsComponent(props) {
                 </a>
               </ListGroupItem>
               <ListGroupItem>
+              <span className={styles.trendingUp} > <PhoneIcon /> </span>
                 <a href={"tel:" + props.phone}>
                   {props.phone || "N.A."}
                 </a>

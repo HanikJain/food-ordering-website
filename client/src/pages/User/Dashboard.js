@@ -41,7 +41,6 @@ export default function Dashboard(props) {
         setUserName(results.name);
         setUserEmail(results.email);
         setUserOrder(results.order);
-        console.log(results.order);
       }
     }
 
