@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card, ListGroup, ListGroupItem, blockquote} from 'react-bootstrap'
+import {Card, ListGroup, ListGroupItem} from 'react-bootstrap'
 import { ReactComponent as RedHeart } from '../../../assets/icons/red-heart.svg';
 import {ReactComponent as TrendingUp } from "../../../assets/icons/trending-up.svg";
 import {ReactComponent as PhoneIcon } from "../../../assets/icons/phone.svg";

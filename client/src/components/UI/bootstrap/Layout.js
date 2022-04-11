@@ -1,6 +1,6 @@
 import React from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
-import ReviewCard, {CardComponent, DetailsComponent} from './Card';
+import ReviewCard, {DetailsComponent} from './Card';
 
 export default function Layout (props) {
   return (

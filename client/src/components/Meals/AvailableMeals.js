@@ -5,8 +5,7 @@ import React, {useContext, useEffect, useState} from 'react'
 import classes from './AvailableMeals.module.css';
 import MealItem from './MealItem';
 import CartContext from '../../store/cart-context';
-import useFetchMeals from '../../hooks/use-fetchMeals'
-import CarouselItem from '../UI/Carousel';
+
   
   export default function AvailableMeals() {
     const cartItems = useContext(CartContext);

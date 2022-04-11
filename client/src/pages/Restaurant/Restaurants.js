@@ -1,5 +1,5 @@
-import React, {useState, Fragment, useEffect} from "react";
-import {useSelector, useDispatch} from "react-redux"
+import React, {useState, Fragment} from "react";
+import {useDispatch} from "react-redux"
 
 
 import SearchInput from "../../components/UI/SearchInput";

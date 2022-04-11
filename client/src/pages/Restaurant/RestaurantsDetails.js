@@ -7,7 +7,7 @@ import CartContext from '../../store/cart-context';
 import NavBar from "../../components/Layout/NavBar";
 import Layout from '../../components/UI/bootstrap/Layout';
 import CarouselComponent from '../../components/UI/bootstrap/Carousel';
-import CardCompnent, {CardQuote} from '../../components/UI/bootstrap/Card';
+import {CardQuote} from '../../components/UI/bootstrap/Card';
 
 import styles from "./RestaurantsDetails.module.css";
 
@@ -63,21 +63,6 @@ export default function RestaurantsDetails() {
     const cartItemAddHandler = (item) => {
       cartItems.addItem({ ...item, amount: 1 });
     };
-
-    function oneMeal(meal) {
-      return <MealItem 
-      src = {meal.src} 
-      alt = {meal.name} 
-      key = {meal.id}
-      id = {meal.id}
-      name = {meal.name}
-      description = {meal.description} 
-      price = {meal.price}
-      amount = {meal.amount}
-      onRemove={cartItemRemoveHandler.bind(null, meal.id)}
-      onAdd={cartItemAddHandler.bind(null, meal)}
-      />     
-    }
 
     function mealItems (meals){
       return Object.keys(meals).map((key) => {
