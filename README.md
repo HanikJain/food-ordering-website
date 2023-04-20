@@ -4,6 +4,9 @@ Food ordering website made with MERN
 # Live project
 https://meal-monkey.onrender.com/
 
+Note : Sometimes Backend may go down if monthly quota is reached across all free instances on [render](https://render.com/)
+
+
 ## Project Setup
 To setup this project in your local machine follow the next 3 steps.
 
